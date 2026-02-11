@@ -236,9 +236,7 @@ body {
 }
 /* ================= testimonial ================= */
 .testimonials {
-  max-width: 1200px;
   margin: 60px auto;
-  padding: 0 20px;
 }
 
 .testimonials .section-title {
@@ -252,27 +250,27 @@ body {
 /* Cards grid */
 .testimonials .cards {
   display: grid;
-  gap: 24px;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 /* Individual card */
 .testimonials .card {
   background: var(--bg-light);
-  border: 1px solid #eee;
-  border-radius: 10px;
+  border: 1px solid #eaeaea;
+  border-radius: 4px;
   padding: 24px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  min-height: 420px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .testimonials .quote {
-  font-size: 0.95rem;
-  color: #444;
-  margin-bottom: 16px;
-  font-style: italic;
+ font-size: 14px;
+    color: #111;
+    font-weight: 400;
+    line-height: 1.5;
 }
 
 /* Author info */
@@ -283,7 +281,7 @@ body {
 }
 
 .author img {
-  border-radius: 50%;
+  border-radius: 4px;
   width: 40px;
   height: 40px;
   object-fit: cover;
@@ -298,7 +296,72 @@ body {
   font-size: 0.85rem;
   color: #777;
 }
+/* ================= feature section ================= */
 
+.features-section {
+  margin: 60px auto;
+  color: #333;
+}
+
+.features-title {
+  font-size: 1.9rem;
+  margin-bottom: 24px;
+  font-weight: 500;
+}
+
+/* Grid */
+.features-grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Card */
+.feature-card {
+  background: var(--bg-light);
+  border: 1px solid #ece8e0;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Text content */
+.text-content {
+  padding: 20px;
+}
+
+.text-content h3 {
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.text-content p {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.text-content a {
+  font-size: 0.95rem;
+  color: #d44c10;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Visual area */
+.visual {
+  margin-top: 10px;
+  background: var(--bg-light);
+  height: 180px;
+  border-top: 1px solid #ece8e0;
+  border-radius: 0 0 10px 10px;
+}
+
+/* Placeholder variation classes */
+.placeholder-models { background: #e4e2de; }
+.placeholder-code { background: #dcdad7; }
+.placeholder-photo { background: #c4c2bf; }
 
 /* ================= FOOTER ================= */
 
@@ -361,4 +424,10 @@ body {
   background: #e9e8e4;
   border-radius: 999px;
   font-size: 12px;
+}
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0 0 10px 10px;
 }

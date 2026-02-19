@@ -431,3 +431,65 @@ body {
   object-fit: cover;
   border-radius: 0 0 10px 10px;
 }
+.basic-card h1 {
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 40px;
+    }
+
+  .basic-card .changelog-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 24px;
+        margin-bottom: 30px;
+    }
+
+    .basic-card .card {
+        background: #ece9e4;
+        padding: 28px;
+        border-radius: 14px;
+        transition: all 0.25s ease;
+        cursor: pointer;
+    }
+
+    .basic-card .card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    .basic-card .date-row {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 18px;
+        font-size: 16px;
+        color: #5a5a5a;
+    }
+
+    .basic-card .badge {
+        padding: 6px 12px;
+        border-radius: 20px;
+        border: 1px solid #999;
+        font-size: 14px;
+        background: transparent;
+    }
+
+    .basic-card .card-title {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.4;
+    }
+
+    .basic-card .see-more {
+        color: #ff5a00;
+        font-size: 18px;
+        text-decoration: none;
+        font-weight: 500;
+        display: inline-block;
+        margin-top: 10px;
+        transition: 0.2s;
+    }
+
+    .basic-card .see-more:hover {
+        opacity: 0.7;
+    }
